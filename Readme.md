@@ -52,14 +52,22 @@ The **Hostel Management System** is a web-based application designed to streamli
 
 ## 📷 Screenshots
 _(Attach relevant screenshots here to showcase login, student dashboard, admin panel, and allocation system.)_
-![Login Page](Screenshot/login.png),
-![Sign up](Screenshot/sign_up.png),
-![Admin Dashboard](Screenshot/dashboard.png),
-![Student data](Screenshot/student_data.png),
-![Show Feedback](Screenshot/show_feedback.png),
-![Student Dashboard](Screenshot/student_dashboard.png),
-![Student feedback](Screenshot/student_feedback.png),
-![Student allocation letter](Screenshot/allocation_letter.png),
+### Login Page
+![Login Page](Screenshot/login.png)
+### Sign up
+![Sign up](Screenshot/sign_up.png)
+### Admin Dashboard
+![Admin Dashboard](Screenshot/dashboard.png)
+### Student data
+![Student data](Screenshot/student_data.png)
+### Show Feedback
+![Show Feedback](Screenshot/show_feedback.png)
+### Student Dashboard
+![Student Dashboard](Screenshot/student_dashboard.png)
+### Student feedback
+![Student feedback](Screenshot/student_feedback.png)
+### Student allocation letter
+![Student allocation letter](Screenshot/allocation_letter.png)
 
 ---
 
