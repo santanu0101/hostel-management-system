@@ -1,7 +1,7 @@
 # Hostel Management System
 
 ## 📌 Project Overview
-The **Hostel Management System** is a web-based application designed to streamline the process of room allocation in hostels. It is developed using **HTML, Tailwind CSS, jQuery, AJAX, PHP, and MySQL**. The system features two types of user roles:
+The **Hostel Management System** is a web-based application designed to streamline the process of room allocation in hostels. It is developed using **HTML, Tailwind CSS, jQuery, AJAX, PHP, phpMailer and MySQL**. The system features two types of user roles:
 - **Admin**: Manages student registrations and allocates rooms.
 - **Student**: Registers for a room and downloads the allocated room letter.
 
@@ -29,6 +29,10 @@ The **Hostel Management System** is a web-based application designed to streamli
 - Admin manually assigns a room to each student.
 - Once allocated, the student can view the **room number** and download the **allocation letter**.
 
+### 🔹 **Mail send**
+- Register sccessfull then mail send
+- Room allocate then mail send to student
+
 ### 🔹 **AJAX-based Dynamic Updates**
 - Room requests and allocations are processed without page refresh.
 - Students get real-time updates on their room allocation status.
@@ -41,32 +45,64 @@ The **Hostel Management System** is a web-based application designed to streamli
 
 ## 🛠️ Technologies Used
 - **Frontend:** HTML, Tailwind CSS, jQuery
-- **Backend:** PHP, MySQL
+- **Backend:** PHP, phpMailer, MySQL
 - **AJAX:** Used for seamless, dynamic data updates
 
 ---
 
 ## 📷 Screenshots
 _(Attach relevant screenshots here to showcase login, student dashboard, admin panel, and allocation system.)_
+![Login Page](Screenshot/login.png),
+![Sign up](Screenshot/sign_up.png),
+![Admin Dashboard](Screenshot/dashboard.png),
+![Student data](Screenshot/student_data.png),
+![Show Feedback](Screenshot/show_feedback.png),
+![Student Dashboard](Screenshot/student_dashboard.png),
+![Student feedback](Screenshot/student_feedback.png),
+![Student allocation letter](Screenshot/allocation_letter.png),
 
 ---
 
-## 📂 Project Structure
-```
-/hostel-management-system
-│── /assets        # Static files (CSS, JS, images)
-│── /db            # Database schema and SQL files
-│── /admin         # Admin-specific pages
-│── /student       # Student-specific pages
-│── index.php      # Main landing page
-│── login.php      # Login page for admin and students
-│── register.php   # Student registration page
-│── dashboard.php  # Student dashboard
-│── allocate.php   # Admin allocation page
-│── download.php   # Room allocation letter download
-│── config.php     # Database connection settings
-│── ajax.php       # AJAX handlers
-└── README.md      # Project documentation
+## 📂 Folder Structure
+```bash
+HMS/
+│── .git/                # Git repository (if version-controlled)
+│── .vscode/             # VS Code settings (if applicable)
+│── config/              # Configuration files
+│── db/                  # Database-related files
+│── HMS send/            # Additional storage for sending data
+│── img/                 # Image assets
+│── upload/              # Uploads folder
+│── upload1/             # Another upload directory
+│── web/                 # Core application files
+│   ├── approve.php      # Admin approves student room allocation
+│   ├── authuser.php     # Authentication handling
+│   ├── dashboard.php    # Admin dashboard
+│   ├── delete.php       # Delete functionality
+│   ├── dropdown_value.php  # Fetch dropdown values dynamically
+│   ├── feedback.php     # Student feedback submission
+│   ├── feedback_data_show.php # Display feedback data
+│   ├── generate-pdf.js  # Generate PDF for room allocation
+│   ├── hostel-management-system.sql # Database dump
+│   ├── index.html       # Landing page
+│   ├── indexinvoice.php # Invoice management
+│   ├── invoice-pdf.css  # PDF styles
+│   ├── invoice.css      # Invoice styles
+│   ├── invoice.php      # Invoice generation
+│   ├── jquery.min.js    # jQuery library
+│   ├── login.php        # Student/Admin login
+│   ├── login_check.php  # Login validation
+│   ├── logout.php       # Logout functionality
+│   ├── pdf_make.php     # PDF generation
+│   ├── show_data.php    # Display student data
+│   ├── signup.php       # Student registration
+│   ├── signup_check.php # Signup validation
+│   ├── student_dashboard.php  # Student dashboard
+│   ├── student_dashboard_check.php  # Dashboard authentication
+│   ├── student_data.php  # Student records
+│   ├── student_data_show.php  # Show student details
+│   ├── studentauth.php   # Student authentication
+│   ├── Readme.md        # Documentation
 ```
 
 ---
@@ -74,7 +110,7 @@ _(Attach relevant screenshots here to showcase login, student dashboard, admin p
 ## 🔧 Installation Guide
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/your-repo/hostel-management-system.git
+git clone https://github.com/santanu0101/hostel-management-system.git
 ```
 
 ### **2️⃣ Setup Database**
@@ -103,6 +139,9 @@ git clone https://github.com/your-repo/hostel-management-system.git
    - Once a room is assigned, students can view their room details.
    - Download the allocation letter from their dashboard.
 
+4. **Mail Send**
+   - Register sccessfull then mail send
+   - Room allocate then mail send to student
 ---
 
 ## 📜 License
@@ -118,4 +157,6 @@ For any queries or contributions, feel free to reach out:
 ---
 
 _Enjoy developing and managing hostel rooms efficiently! 🚀_
+
+
 
