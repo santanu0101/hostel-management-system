@@ -1,0 +1,30 @@
+/* These styles are only for rendering in a browser */
+
+.web-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  /* margin-top: 20px;
+  margin-bottom: 30px; */
+}
+
+/* .out{
+  border: 2px solid black;
+} */
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  /* margin-bottom: 40px; */
+}
+
+.button{
+  height: 35px;
+  width: 120px;
+  background: #3fdaa1;
+  border-radius: 4px;
+  
+}
